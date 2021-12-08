@@ -62,7 +62,7 @@ th {
 }
 
 .sn-col {
-    min-width: 3vw;
+    min-width: 5vw;
     margin-left: 5px;
 }
 
@@ -71,15 +71,15 @@ th {
 }
 
 .code-col {
-    min-width: 10vw;
+    min-width: 15vw;
 }
 
 .demo-col {
-    min-width: 10vw;
+    min-width: 15vw;
 }
 
 .topic-col {
-    min-width: 10vw;
+    min-width: 15vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
