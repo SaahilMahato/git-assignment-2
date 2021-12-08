@@ -89,6 +89,11 @@ th {
     margin-left: 5px;
 }
 
+.topic-col img {
+    height: 32px;
+    width: 32px;
+}
+
 .odd-row {
     display: flex;
     justify-content: space-between;
