@@ -107,3 +107,11 @@ th {
     min-height: 4vh;
     background-color: #D2D2D2;
 }
+
+.odd-row:hover{
+    background-color: #EAF2EA;
+}
+
+.even-row:hover {
+    background-color: #EAF2EA;
+}
