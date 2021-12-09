@@ -40,19 +40,14 @@ h2 {
 }
 
 #assignment-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    border-collapse:collapse;
     box-shadow: -5px 5px 5px #5B5A5A;
 }
 
 #table-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 20px;
     min-height: 5vh;
+    height: 5vh;
     color: white;
     background-color: #2B2A2A;
 }
@@ -61,9 +56,15 @@ th {
     text-align: start;
 }
 
+.topic-col-head {
+    min-height: 5vh !important;
+    height: 5vh !important;
+    display: table-cell !important;
+    vertical-align: center !important;
+}
+
 .sn-col {
     min-width: 5vw;
-    margin-left: 5px;
 }
 
 .title-col {
@@ -95,18 +96,12 @@ th {
 }
 
 .odd-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 16px;
     min-height: 4vh;
     background-color: #E8E8E8;
 }
 
 .even-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 16px;
     min-height: 4vh;
     background-color: #D2D2D2;
