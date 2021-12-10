@@ -78,6 +78,10 @@ function renderTable(data) {
             topic_icon.src = "./assets/git-logo.png";
             topic_icon.alt = "git logo";
         }
+        else if (row[4] === "Design") {
+            topic_icon.src = "./assets/design-logo.png";
+            topic_icon.alt = "design logo";
+        }
         let topic_span = document.createElement("span"); // create a span element
         topic_span.innerHTML = row[4]; // add innertext to span
         topic_cell.appendChild(topic_icon); // add icon to cell
