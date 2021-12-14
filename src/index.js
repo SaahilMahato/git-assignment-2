@@ -25,10 +25,10 @@ function renderTable(data) {
             if(desc.includes("leapfrog-assignment")) {
                 // assign variables data to be stored in table
                 sn = row_num;
-                assignment_title = data[i].name;
+                assignment_dummy= data[i].name;
                 assignment_title = assignment_title.replace(/-/g, " ");
                 source_code = data[i].html_url;
-                hosted_link = "https://saahilmahato.github.io/" + assignment_title + "/";
+                hosted_link = "https://saahilmahato.github.io/" + assignment_dummy + "/";
                 topic = desc.split(" ")[1];
 
                 table_data.push([sn, assignment_title, source_code, hosted_link, topic]); // create array of the data and push to table
