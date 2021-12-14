@@ -26,7 +26,7 @@ function renderTable(data) {
                 // assign variables data to be stored in table
                 sn = row_num;
                 assignment_title = data[i].name;
-                assignment_title.replace("-", " ");
+                assignment_title = assignment_title.replace(/-/g, " ");
                 source_code = data[i].html_url;
                 hosted_link = "https://saahilmahato.github.io/" + assignment_title + "/";
                 topic = desc.split(" ")[1];
