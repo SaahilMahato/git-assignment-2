@@ -83,6 +83,10 @@ function renderTable(data) {
             topic_icon.src = "./assets/design-logo.png";
             topic_icon.alt = "design logo";
         }
+        else if (row[4] === "JavaScript") {
+            topic_icon.src = "./assets/js-logo.png";
+            topic_icon.alt = "js logo";
+        }
         let topic_span = document.createElement("span"); // create a span element
         topic_span.innerHTML = row[4]; // add innertext to span
         topic_cell.appendChild(topic_icon); // add icon to cell
