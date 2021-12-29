@@ -1,11 +1,11 @@
 // api to get repo data provided by github
-let url = "https://api.github.com/users/SaahilMahato/repos"
+let url = "https://api.github.com/search/repositories?q=user:SaahilMahato+sort:updated";
 
 // function to fetch data and call renderTable function
 async function getData(url) {
     fetch(url, {method: 'GET', headers:{}}) // fetch
     .then(response => response.json()) // get json from response
-    .then(data => renderTable(data)) // call renderTable function and pass the json as argument
+    .then(data => renderTable(data.items)) // call renderTable function and pass the json as argument
 }
 
 getData(url); // call the getData function 
@@ -13,6 +13,7 @@ getData(url); // call the getData function
 // renderTable function formats the data and renders the table 
 function renderTable(data) {
 
+    console.log(data);
     // variables that need to be displayed on the table
     let desc, sn, assignment_title, source_code, hosted_link, topic;
     let table_data = []; // array to store the table content
